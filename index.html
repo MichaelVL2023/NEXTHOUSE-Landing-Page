@@ -1,113 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextHouse</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <link rel="icon" href="images/Logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <main class="main">
-        <section class="contenedor-1">
-            <header class="header">
-                <div class="logo">
-                    <img src="img/logo1.png" alt="">
-                    <p>NextHouse</p>
+    <nav id="navbar-example" class="navbar navbar-light navbar-expand-md px-4 py-3" style="background-color: #FFF1D7;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" translate="no">
+                <img src="img/logo1.png" alt="" width="60" height="60" class="d-inline-block align-text-bottom" />
+                NextHouse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <ul>
+                        <li><a class="nav-link active" aria-current="page" href="#">Caracteristicas</a></li>
+                        <li><a class="nav-link" href="#">Acerca de</a></li>
+                        <li><a class="nav-link" href="#">Testimonios</a></li>
+                        <li><a class="nav-link" href="#">Ayuda</a></li>
+                    </ul>
                 </div>
-                <nav class="navegacion">
-                    <a href="" class="link">Caracteristicas</a>
-                    <a href="" class="link">Acerca de</a>
-                    <a href="" class="link">Testimonios</a>
-                    <a href="" class="link">Ayuda</a>
-                </nav>
-            </header>
-            <div class="banner">
-                <div class="banner_texto">
-                    <h1> <u>Encuetra tu <br> lugar</u> </h1>
-                    <div class="casilleros">
-                        <form action="">
-                            <div class="formulario">
-                                <input class="formularios" type="text" name="" id="" placeholder="INGRESA DEPARTAMENTO O DISTRITO">
+            </div>
+        </div>
+    </nav>
+    <section class="main-section">
+        <div class="container">
+            <div class=" container row d-flex justify-content-around">
+                <div class="main-section-text col text-center">
+                    <h1 style="color: green; text-decoration-line: underline;"> Encuentra tu<br> lugar</h1>
+                </div>
+                <div class="col">
+                    <form>
+                        <fieldset>
+                            <div class="mb-2">
+                                <input class="form-control" type="text" id="departamento" name="departamento"
+                                    placeholder="INGRESA DEPARTAMENTO O DISTRITO">
                             </div>
-                            <br>
-                            <div class="formulario">
-                                <input class="formularios" type="text" name="" id="" placeholder="DETERMINA TU TIPO DE VIVIENDA">
+                            <div class="mb-2">
+                                <input class="form-control" type="text" id="tipo" name="tipo"
+                                    placeholder="DETERMINA EL TIPO DE VIVIENDA">
                             </div>
-                            <br>
-                            <div class="formulario">
-                                <input class="formularios" type="text" name="" id="" placeholder="PRECIO APROX.">
+                            <div class="mb-2">
+                                <input class="form-control" type="text" id="precio" name="precio"
+                                    placeholder="PRECIO APROX.">
                             </div>
-                            
-                        </form>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="right d-flex col" style="margin-left: 5rem; flex-direction: column;">
+                    <button class="mi-boton"> BUSCAR </button>
+                    <button class="mi-boton"> + FILTROS </button>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31209.577374583034!2d-77.07421971761197!3d-12.09865029014291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c842e97d1b27%3A0x32a2c5cc041d2ebb!2sSan%20Isidro!5e0!3m2!1ses-419!2spe!4v1686268335483!5m2!1ses-419!2spe"
+                    width="1000" height="450" style="border: 0; border-radius: 2rem;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" style="background-color: #FFF1D7;" id="services" data-bs-spy="scroll"
+        data-bs-target="#navbar-example">
+        <div class="container" style="padding-bottom: 5rem;">
+            <div class="row" style="padding-top: 2rem;">
+                <h1>Disfruta</h1>
+            </div>
+            <div class="row" style="padding-top: 2rem;">
+                <div class="col d-flex flex-column justify-content-around">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/check.png" alt="" />
+                        </div>
+                        <div class="col">
+                            <p style="font-size: 24px;">Vista en 360°</p>
+                        </div>
                     </div>
-                        <a href="#" class="boton1">Buscar</a>
-                        <a href="#" class="boton2">Filtros</a>
-                 
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/flag.png" alt="" />
+                        </div>
+                        <div class="col">
+                            <p style="font-size: 24px;">Contacto seguro</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/star.png" alt="" />
+                        </div>
+                        <div class="col">
+                            <p style="font-size: 24px;">Viendas en variedad</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mapa">
-                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31209.577374583034!2d-77.07421971761197!3d-12.09865029014291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c842e97d1b27%3A0x32a2c5cc041d2ebb!2sSan%20Isidro!5e0!3m2!1ses-419!2spe!4v1686268335483!5m2!1ses-419!2spe" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col">
+                    <div class="image-container">
+                        <img style="height: 400px;" src="img/vivienda.jpg" alt="" />
+                    </div>
                 </div>
-             </div>
-        </section>
-        <section class="contenedor-2">
-            <div class="text">
-                <h2> Disfruta</h2>
-                <img class="iconos" src="img/check.png" alt=""><p>Vista en 360°</p>
-                <img class="iconos" src="img/flag.png" alt=""> <p>Contacto seguro</p>
-                <img class="iconos" src="img/star.png" alt="">  <p>Viendas en variedad</p>
             </div>
-            <div class="imagen">
-                <img src="img/vivienda.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="contenedor-3">
+        <hr>
+        <div class="textoslider">
+            <h2 style="text-align: center;">
+                "Aquí podra buscar de diferentes formas para encontrar su vivienda ideal, de un modo fácil y sencillo, sabiendo exactamente como se ve, gracias a nuestro video 360°."
+            </h2>
+        </div>
+        <div class="logoslider">
+            <img src="img/logo1.png" alt="" />
+            <p>Javier,Armas CO comunity, <strong>NextHouse</strong></p>
+        </div>
+    </section>
+
+    <section class="contenedor-4">
+        <hr>
+        <div class="textoD">
+            .
+            <h2>Descarga la aplicación móvil gratis</h2>
+            <p>
+                Como sabemos que estas en diversas plataformas también nos <br />
+                adecuamos a nuestros usuarios
+            </p>
+            <img class="" src="img/google-play-badge.svg" width="180px" alt="" />
+            <img class="" src="img/apple.png" width="300px" alt="" />
+        </div>
+    </section>
+    <section class="contenedor-5">
+        <footer>
+            <div class="footer-menu-container">
+                <a href="" class="menu-item">Caracteristicas</a>
+                <a href="" class="menu-item">Acerca de</a>
+                <a href="" class="menu-item">Testimonios</a>
+                <a href="" class="menu-item">Contacto</a>
+                <a href="" class="menu-item">Descarga</a>
             </div>
-        </section>
-        <section class="contenedor-3">
-            <div class="textoslider">.
-                <h2>"Aquí podra buscar de diferentes formas para encontrar su <br> 
-                         vivienda ideal, de un modo fácil y sencillo, sabiendo <br>
-                             exactamente como se ve, gracias a nuestro video 360°."
-                </h2>
+            <h2 style="color: black;">SIGUENOS</h2>
+            <div class="social-icons-conatainer">
+                <img class="icons" src="img/icons8-facebook-nuevo-50.png" alt="" />
+                <img class="icons" src="img/icons8-twitter-50.png" alt="" />
+                <img class="icons" src="img/icons8-instagram-50.png" alt="" />
+                <img class="icons" src="img/icons8-linkedin-50.png" alt="" />
             </div>
-            <div class="logoslider">
-                <img src="img/logo1.png" alt="">
-                <p>Javier,Armas CO comunity, <strong>NextHouse</strong></p>
-            </div>
-           
-          
-        </section>
-        <section class="contenedor-4">
-            <div class="textoD">.
-                <h2>Descarga la aplicación móvil gratis</h2>
-                <p>como sabemos que estas en diversas plataformas también nos <br> 
-                          adecuamos a nuestros usuario </p>
-                          <img class="" src="img/apple.png" width="300px" alt="">
-                          <img class="" src="img/apple.png" width="300px" alt="">
-                       
-            </div>
-            
-        </section>
-        <section class="contenedor-5">
-            <footer>
-                <div class="footer-menu-container">
-                    <a href="" class="menu-item">Caracteristicas</a>
-                    <a href="" class="menu-item">Acerca de</a>
-                    <a href="" class="menu-item">Testimonios</a>
-                    <a href="" class="menu-item">Contacto</a>
-                    <a href="" class="menu-item">Descarga</a>
-                </div>
-                <h2>SIGUENOS  </h2> 
-                <div class="social-icons-conatainer">
-                   
-                    <img class="icons" src="img/icons8-facebook-nuevo-50.png" alt="">
-                    <img class="icons" src="img/icons8-twitter-50.png" alt="">
-                    <img class="icons" src="img/icons8-instagram-50.png" alt="">
-                    <img class="icons" src="img/icons8-linkedin-50.png" alt="">
-                </div>
-                <br class="coppy-right"> 1111 Lima , Miraflores, CA XXXXXX, Perú</br></span>
-                <span class="coppy-right">&copy;2023 Empresa, Reservando todos los derechos. </span>
-            </footer>
-        </section>
-    </main>
+            <span class="coppy-right" style="color: black;">&copy;2023 NextHouse, Reservando todos los derechos.
+            </span>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
